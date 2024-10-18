@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #6a7077;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 10px;
+}
+
+h4 {
+    color: white;
+    margin-bottom: 2s0px;
+    background-color: #434747;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    max-width: 400px;
+    text-align: center;
+}
+
+form {
+    background-color: #434747;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+p {
+    margin-top: 10px;
+    color: #007bff;
+}
+
+/* Ajustement de l'image pour qu'elle soit de la même taille que le formulaire */
+img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 5px;
+    object-fit: cover; /* Pour ajuster l'image si elle ne correspond pas aux dimensions */
+    border-radius: 10px; /* Pour rendre les coins arrondis comme le formulaire */
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    input[type="text"], .btn {
+        font-size: 14px;
+    }
+}
