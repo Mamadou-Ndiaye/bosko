@@ -67,6 +67,8 @@ def rechercher_par_id_et_ajouter(id_recherche):
 def download_file():
     file_path = './resultats_recherche.xlsx'  # Remplacez par le chemin du fichier sur le serveur
     try:
+        df = pd.read_excel(file_path, engine='openpyxl')
+        print(df.head())  # Affiche les premières lignes
         return send_file(file_path, as_attachment=True)
     except FileNotFoundError:
         return "Fichier introuvable", 404
